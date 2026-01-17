@@ -23,8 +23,10 @@ body {
   --bg-muted: #f6f7f9;
   --text: #111827;
   --text-muted: #6b7280;
-  --primary: #2563eb;
-  --primary-hover: #1d4ed8;
+  --primary: #374151;
+  /* slate-700 */
+  --primary-hover: #1f2933;
+  /* slate-800 */
   --border: #e5e7eb;
   --error: #dc2626;
 
@@ -71,9 +73,11 @@ h6 {
 h1 {
   font-size: 2.25rem;
 }
+
 h2 {
   font-size: 1.75rem;
 }
+
 h3 {
   font-size: 1.375rem;
 }
