@@ -1,5 +1,7 @@
 import styles from "./page.module.css";
-import Image from "next/image";
+import Image from "next/image"; 
+import Video from "@/components/Video";
+import { videos } from "@/data/videos";
 
 function Searchbar() {
   return (
@@ -44,13 +46,6 @@ function Header() {
         <button></button>
         <button></button>
       </div>
-
-
-
-
-
-
-
     </div>
   );
 }
@@ -59,6 +54,7 @@ export default function HomePage() {
   return (
     <div>
       <Header />
+      <Video id={videos[0].id} title={videos[0].title} thumbnail={videos[0].thumbnail} channelName={videos[0].channelName} views={videos[0].views} uploadedAt={videos[0].uploadedAt} duration={videos[0].duration} />
     </div>
   );
 }

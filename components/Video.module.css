@@ -1,0 +1,86 @@
+.videoDiv {
+    width: 100%;
+    min-width: 340px;
+    max-width: 400px;
+
+    aspect-ratio: 6 / 5;
+}
+.topDiv {
+    width: 100%;
+    height: 70%;
+    padding: 1%;
+}
+.bottomDiv {
+    width: 100%;
+    height: 30%;
+    padding: 1%;
+}
+.videoImageDiv {
+    width: 100%;
+    height: 100%;
+    border-radius: 12px;   /* round the corners */
+    overflow: hidden;      /* IMPORTANT */
+}
+.videoImage {
+    object-fit: cover; 
+}
+.videoInfoDiv {
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+.videoTitleDiv {
+    display: flex;
+    justify-content: space-between;
+}
+.videoTitle {
+    font-size: 16px;
+}
+.channelName {
+    font-size: 14px;
+    color: gray;
+    font-weight: 500;
+}
+.metricsDiv {
+    display: flex;
+}
+.profilePictureDiv {
+    width: 15%;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.profilePicturePlaceholder {
+    width: 40px;
+    height: 40px;
+    background-color: red;
+    border-radius: 1000px;
+}
+.videoTextDiv {
+    width: 85%;
+    height: 100%;
+}
+.videoImage {
+    height: 100%;
+    aspect-ratio: inherit;
+}
+.metricsDiv {
+    
+}
+.views {
+    font-size: 14px;
+    color: gray;
+    font-weight: 500;
+    padding-right: 4px;
+}
+.dot {
+    font-size: 14px;
+    color: gray;
+    font-weight: 500;
+    padding-right: 4px;
+}
+.uploadedAt {
+    font-size: 14px;
+    color: gray;
+    font-weight: 500;
+}
