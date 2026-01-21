@@ -33,7 +33,15 @@ function Header() {
             height={30}
           />
         </button>
-        <button className = {styles.youtubeButton}>Youtube</button>
+        <button className = {styles.youtubeButton}>
+             <Image
+             className = {styles.youtubeButton}
+             src = "/icons/youtubeLogo.jpg"
+             alt =  "youtube logo"
+             width = {90}
+             height = {50}
+             />
+        </button>
       </div>
       <div className={styles.middleDiv}>
         <div className = {styles.searchbarDiv}>
@@ -54,7 +62,20 @@ export default function HomePage() {
   return (
     <div>
       <Header />
-      <Video id={videos[0].id} title={videos[0].title} thumbnail={videos[0].thumbnail} channelName={videos[0].channelName} views={videos[0].views} uploadedAt={videos[0].uploadedAt} duration={videos[0].duration} />
+
+      <div className = {styles.videoGrid}>
+        {videos.map(video => (
+        <Video
+          key = {video.id}
+          title={video.title}
+          thumbnail={video.thumbnail}
+          uploadedAt={video.uploadedAt}
+          channelName={video.channelName}
+          views={video.views}
+          duration={video.duration}
+        />
+      ))}
+      </div>
     </div>
   );
 }

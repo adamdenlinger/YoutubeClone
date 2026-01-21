@@ -2,7 +2,7 @@ import styles from './Video.module.css'
 import Image from 'next/image';
 
 interface VideoProps {
-    id: string;
+    key: string;
     title: string;
     thumbnail: string;
     channelName: string;
@@ -11,7 +11,7 @@ interface VideoProps {
     duration: string;
 }
 
-export default function Video({ id, title, thumbnail, channelName, views, uploadedAt, duration }: VideoProps) {
+export default function Video({title, thumbnail, channelName, views, uploadedAt, duration }: VideoProps) {
     return (
         <div className={styles.videoDiv}>
             <div className={styles.topDiv}>
